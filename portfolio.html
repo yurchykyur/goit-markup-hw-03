@@ -21,28 +21,30 @@
   <body>
     <!-- Шапка сторінки -->
 
-    <header>
-      <div class="container">
+    <header class="header-border">
+      <div class="container header">
         <nav class="nav-link">
           <a href="./index.html" class="logo"
             ><span class="logo-web">Web</span>Studio</a
           >
           <ul class="site-nav list">
-            <li><a href="./index.html" class="link">Studio</a></li>
-            <li>
+            <li class="item">
+              <a href="./index.html" class="link">Studio</a>
+            </li>
+            <li class="item">
               <a href="./portfolio.html" class="link current">Portfolio</a>
             </li>
-            <li><a href="" class="link">Contacts</a></li>
+            <li class="item"><a href="" class="link">Contacts</a></li>
           </ul>
         </nav>
-        <address>
+        <address class="main-adress">
           <ul class="contact-adress list">
-            <li>
+            <li class="item">
               <a href="mailto:info@devstudio.com" class="link"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="item">
               <a href="tel:+110001111111" class="tel">+11 (000) 111-11-11</a>
             </li>
           </ul>
@@ -53,20 +55,28 @@
     <!-- Portfolio -->
 
     <main>
-      <h1>Portfolio</h1>
+      <h1 hidden>Portfolio</h1>
       <!-- Фільтр відображення Buttons-->
       <section class="section portfolio">
         <div class="container">
-          <ul class="list">
-            <li><button type="button" class="button secondary">All</button></li>
-            <li>
+          <ul class="list portfolio-button">
+            <li class="item">
+              <button type="button" class="button secondary">All</button>
+            </li>
+
+            <li class="item">
               <button type="button" class="button secondary">Web Site</button>
             </li>
-            <li><button type="button" class="button secondary">App</button></li>
-            <li>
+
+            <li class="item">
+              <button type="button" class="button secondary">App</button>
+            </li>
+
+            <li class="item">
               <button type="button" class="button secondary">Design</button>
             </li>
-            <li>
+
+            <li class="item">
               <button type="button" class="button secondary">Marketing</button>
             </li>
           </ul>
@@ -75,107 +85,109 @@
         <!-- Приклади портфоліо -->
 
         <div class="container">
-          <ul class="list">
-            <li>
+          <ul class="list portfolio-examples">
+            <li class="item">
               <a href="" class="portfolio-link">
                 <img
                   src="./images/banking_app_interface_concept.jpg"
                   alt="Banking App Interface Concept"
-                  width="360"
                 />
-                <h2 class="portfolio-subtitle">
-                  Banking App Interface Concept
-                </h2>
-                <p class="portfolio-text">App</p></a
-              >
+                <div class="examples-content">
+                  <h2 class="portfolio-subtitle">
+                    Banking App Interface Concept
+                  </h2>
+                  <p class="portfolio-text">App</p>
+                </div>
+              </a>
             </li>
-            <li>
+
+            <li class="item">
               <a href="" class="portfolio-link">
                 <img
                   src="./images/cashless_payment.jpg"
                   alt="Cashless Payment"
-                  width="360"
                 />
-                <h2 class="portfolio-subtitle">Cashless Payment</h2>
-                <p class="portfolio-text">Marketing</p></a
-              >
+                <div class="examples-content">
+                  <h2 class="portfolio-subtitle">Cashless Payment</h2>
+                  <p class="portfolio-text">Marketing</p>
+                </div>
+              </a>
             </li>
-            <li>
+
+            <li class="item">
               <a href="" class="portfolio-link">
-                <img
-                  src="./images/meditaion_app.jpg"
-                  alt="Meditaion App"
-                  width="360"
-                />
-                <h2 class="portfolio-subtitle">Meditaion App</h2>
-                <p class="portfolio-text">App</p></a
-              >
+                <img src="./images/meditaion_app.jpg" alt="Meditaion App" />
+                <div class="examples-content">
+                  <h2 class="portfolio-subtitle">Meditaion App</h2>
+                  <p class="portfolio-text">App</p>
+                </div>
+              </a>
             </li>
-            <li>
+
+            <li class="item">
               <a href="" class="portfolio-link">
-                <img
-                  src="./images/taxi_service.jpg"
-                  alt="Taxi Service"
-                  width="360"
-                />
-                <h2 class="title">Taxi Service</h2>
-                <p class="portfolio-text">Marketing</p></a
-              >
+                <img src="./images/taxi_service.jpg" alt="Taxi Service" />
+                <div class="examples-content">
+                  <h2 class="portfolio-subtitle">Taxi Service</h2>
+                  <p class="portfolio-text">Marketing</p>
+                </div>
+              </a>
             </li>
-            <li>
+
+            <li class="item">
               <a href="" class="portfolio-link">
                 <img
                   src="./images/screen_illustrations.jpg"
                   alt="Screen Illustrations"
-                  width="360"
                 />
-                <h2 class="portfolio-subtitle">Screen Illustrations</h2>
-                <p class="portfolio-text">Design</p></a
-              >
+                <div class="examples-content">
+                  <h2 class="portfolio-subtitle">Screen Illustrations</h2>
+                  <p class="portfolio-text">Design</p>
+                </div>
+              </a>
             </li>
-            <li>
+
+            <li class="item">
               <a href="" class="portfolio-link">
-                <img
-                  src="./images/online_courses.jpg"
-                  alt="Online Courses"
-                  width="360"
-                />
-                <h2 class="portfolio-subtitle">Online Courses</h2>
-                <p class="portfolio-text">Marketing</p></a
-              >
+                <img src="./images/online_courses.jpg" alt="Online Courses" />
+                <div class="examples-content">
+                  <h2 class="portfolio-subtitle">Online Courses</h2>
+                  <p class="portfolio-text">Marketing</p>
+                </div>
+              </a>
             </li>
-            <li>
+
+            <li class="item">
               <a href="" class="portfolio-link">
                 <img
                   src="./images/instagram_stories_concept.jpg"
                   alt="Instagram Stories Concept"
-                  width="360"
                 />
-                <h2 class="portfolio-subtitle">Instagram Stories Concept</h2>
-                <p class="portfolio-text">Design</p></a
-              >
+                <div class="examples-content">
+                  <h2 class="portfolio-subtitle">Instagram Stories Concept</h2>
+                  <p class="portfolio-text">Design</p>
+                </div>
+              </a>
             </li>
-            <li>
+
+            <li class="item">
               <a href="" class="portfolio-link">
-                <img
-                  src="./images/organic_food.jpg"
-                  alt="Organic Food"
-                  width="360"
-                />
-                <h2 class="portfolio-subtitle">Organic Food</h2>
-                <p class="portfolio-text">Web Site</p></a
-              >
+                <img src="./images/organic_food.jpg" alt="Organic Food" />
+                <div class="examples-content">
+                  <h2 class="portfolio-subtitle">Organic Food</h2>
+                  <p class="portfolio-text">Web Site</p>
+                </div>
+              </a>
             </li>
-            <li>
+
+            <li class="item">
               <a href="" class="portfolio-link">
-                <img
-                  src="./images/fresh_coffee.jpg"
-                  alt="Fresh Coffee"
-                  width="360"
-                />
-                <h2 class="portfolio-subtitle">Fresh Coffee</h2>
-                <p class="portfolio-text">Web Site</p></a
-              >
+                <img src="./images/fresh_coffee.jpg" alt="Fresh Coffee" />
+                <div class="examples-content">
+                  <h2 class="portfolio-subtitle">Fresh Coffee</h2>
+                  <p class="portfolio-text">Web Site</p>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
