@@ -49,6 +49,21 @@ img {
   max-width: 100%;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*  */
+
 /* header */
 .header-border {
   border-bottom: 1px solid var(--accent-color);
@@ -204,10 +219,11 @@ img {
   padding-top: 60px;
 }
 
-.section .values-title {
+/* .section .values-title {
   margin-top: 0;
   margin-bottom: 0;
-}
+} */
+
 .section .doing-title,
 .section .team-title {
   margin-top: 0;
